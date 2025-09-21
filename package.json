@@ -1,19 +1,21 @@
 {
   "name": "personal-record-site",
-  "version": "0.1.0",
-  "description": "Node.js personal publishing framework with AI-assisted workflow",
-  "main": "src/server.js",
+  "version": "0.2.0",
+  "private": true,
   "scripts": {
-    "start": "node src/server.js",
-    "dev": "node src/server.js",
-    "test": "node --check src/server.js"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test": "npm run lint"
   },
-  "keywords": [
-    "personal-site",
-    "journal",
-    "node"
-  ],
-  "author": "",
-  "license": "MIT",
-  "type": "commonjs"
+  "dependencies": {
+    "next": "14.2.3",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "eslint": "8.57.0",
+    "eslint-config-next": "14.2.3"
+  }
 }
