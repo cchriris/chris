@@ -24,7 +24,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      {/*
+        Some browser extensions (e.g. Clip/Shortcut managers) can inject attributes
+        into DOM nodes before React hydrates which causes Next.js to warn about
+        mismatched attributes such as `cz-shortcut-listen`. This warning is
+        harmless in many cases. We suppress the hydration warning on the body
+        element while keeping the server-rendered className deterministic.
+
+        See: https://nextjs.org/docs/messages/react-hydration-error
+      */}
       <body
+        suppressHydrationWarning
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
