@@ -1,0 +1,17 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "未分类",
+      "slug": "uncategorized",
+      "keywords": []
+    }
+  ],
+  "tags": [],
+  "posts": [],
+  "meta": {
+    "nextCategoryId": 2,
+    "nextTagId": 1,
+    "nextPostId": 1
+  }
+}
