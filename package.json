@@ -1,0 +1,19 @@
+{
+  "name": "personal-record-site",
+  "version": "0.1.0",
+  "description": "Node.js personal publishing framework with AI-assisted workflow",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node src/server.js",
+    "test": "node --check src/server.js"
+  },
+  "keywords": [
+    "personal-site",
+    "journal",
+    "node"
+  ],
+  "author": "",
+  "license": "MIT",
+  "type": "commonjs"
+}
